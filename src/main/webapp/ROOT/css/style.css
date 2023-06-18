@@ -1,0 +1,58 @@
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+.header1 img {
+  float: left;
+  width: 100px;
+  height: 100px;  
+}
+
+.header1 h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+  width:700px;
+}
+table .last, td:last-child { 
+    padding: 2px 24px 2px 0px; 
+}       tr:first-child , td:first-child
+        {
+            font-weight: bold;
+        }
+         *{
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+body {    
+	margin: 0;	
+	font-family: sans-serif;
+	font-weight: 100;
+            -webkit-font-smoothing: antialiased;
+
+} 
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+a,a:hover
+{
+    text-decoration: none;
+    color:black;
+}
+
+.logout-btn
+{
+    top:0;
+    position: relative;
+    float:right;    
+}

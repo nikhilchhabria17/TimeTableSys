@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    
+    
+
+    
+    <servlet-mapping>
+   <servlet-name>upload</servlet-name>
+   <url-pattern>/upload</url-pattern>
+</servlet-mapping>   
+
+            <servlet>
+   <servlet-name>upload</servlet-name>
+   <servlet-class>beans.ec.dss.Servlet.UploadServlet</servlet-class>
+</servlet>
+
+    
+    
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditData</servlet-name>
+        <url-pattern>/EditData/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditData</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.EditDataController</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>Export</servlet-name>
+        <url-pattern>/Export/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Export</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.ExportController</servlet-class>
+    </servlet>
+    
+    
+    
+            <servlet-mapping>
+        <servlet-name>Import</servlet-name>
+        <url-pattern>/Import/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Import</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.ImportController</servlet-class>
+    </servlet>
+    
+            <servlet-mapping>
+        <servlet-name>ManageUser</servlet-name>
+        <url-pattern>/ManageUser/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ManageUser</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.ManageUserController</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+
+
+    
+    <servlet-mapping>
+        <servlet-name>Homepage</servlet-name>
+        <url-pattern>/Homepage</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Homepage</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.LoginServlet</servlet-class>
+    </servlet>
+    
+    
+                <servlet-mapping>
+        <servlet-name>TimeTable</servlet-name>
+        <url-pattern>/TimeTable/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TimeTable</servlet-name>
+        <servlet-class>beans.ec.dss.Servlet.TimeTableController</servlet-class>
+    </servlet>
+
+    <error-page>
+    <error-code>404</error-code>
+    <location>/Error_404.jsp</location>
+</error-page>
+<error-page>
+    <error-code>500</error-code>
+    <location>/Error_404.jsp</location>
+</error-page>
+
+<error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/Error_404.jsp</location>
+</error-page>
+    
+</web-app>
